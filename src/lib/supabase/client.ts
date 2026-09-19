@@ -7,8 +7,8 @@ export const isSupabaseConfigured = Boolean(SUPABASE_URL && SUPABASE_PUBLISHABLE
 
 // Never silently connect to a fallback Supabase project. A deployment with
 // missing environment variables must fail closed instead of touching another DB.
-const clientUrl = SUPABASE_URL || 'https://widiucdapoqzfttqluyy.supabase.co'
-const clientKey = SUPABASE_PUBLISHABLE_KEY || 'sb_publishable_hpTxfXKlm0sznwmXVwM47g_qk9cKbQO'
+const clientUrl = SUPABASE_URL || 'https://mqmppizykuoxaprumipr.supabase.co'
+const clientKey = SUPABASE_PUBLISHABLE_KEY || 'sb_publishable_11_eCr0ntRYXA2ZAbIMDEQ_Fe2cys2D'
 
 export const supabase = createClient(clientUrl, clientKey, {
   auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
