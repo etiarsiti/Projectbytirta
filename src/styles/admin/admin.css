@@ -1717,3 +1717,619 @@ aside.sidebar,
     min-height: 42px;
   }
 }
+/* =========================================================
+   PROJECT BY TIRTA — NAVY / SILVER / GOLD THEME
+   ========================================================= */
+
+:root {
+  --pt-navy: #071a3d;
+  --pt-navy-2: #0b2148;
+  --pt-navy-3: #102b58;
+
+  --pt-silver: #c0c0c0;
+  --pt-silver-bright: #e6e6e6;
+  --pt-silver-dark: #9f9f9f;
+
+  --pt-gold: #d4af37;
+  --pt-gold-bright: #f0cf62;
+
+  --pt-border: rgba(212, 175, 55, .75);
+}
+
+/* =========================================================
+   BACKGROUND UTAMA
+   ========================================================= */
+
+.talenta-shell {
+  background: var(--pt-navy) !important;
+  color: var(--pt-silver) !important;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+  background:
+    linear-gradient(
+      180deg,
+      #061633 0%,
+      #081d42 100%
+    ) !important;
+
+  border-right: 1px solid var(--pt-gold) !important;
+  color: var(--pt-silver) !important;
+}
+
+.sidebar .brand b {
+  color: var(--pt-gold-bright) !important;
+}
+
+.sidebar .brand small {
+  color: var(--pt-silver) !important;
+}
+
+.sidebar .nav-title,
+.sidebar .group-title {
+  color: var(--pt-silver-dark) !important;
+}
+
+.sidebar .nav-item {
+  color: var(--pt-silver) !important;
+
+  background: transparent !important;
+
+  border: 1px solid transparent !important;
+
+  min-height: 42px !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  line-height: 1 !important;
+}
+
+.sidebar .nav-item span {
+  color: inherit !important;
+  line-height: 1 !important;
+}
+
+.sidebar .nav-item svg {
+  color: var(--pt-silver) !important;
+}
+
+/* Hover */
+
+.sidebar .nav-item:hover {
+  background: var(--pt-navy-3) !important;
+
+  color: var(--pt-silver-bright) !important;
+
+  border: 1px solid var(--pt-gold) !important;
+
+  box-shadow:
+    0 0 10px rgba(212,175,55,.12);
+
+  transform: none !important;
+}
+
+/* Aktif */
+
+.sidebar .nav-item.active {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(212,175,55,.18),
+      rgba(212,175,55,.06)
+    ) !important;
+
+  color: var(--pt-gold-bright) !important;
+
+  border: 1px solid var(--pt-gold) !important;
+
+  box-shadow:
+    inset 3px 0 0 var(--pt-gold),
+    0 0 12px rgba(212,175,55,.10);
+}
+
+.sidebar .nav-item.active span,
+.sidebar .nav-item.active svg {
+  color: var(--pt-gold-bright) !important;
+}
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+.topbar {
+  background: var(--pt-navy-2) !important;
+
+  border-bottom:
+    1px solid var(--pt-gold) !important;
+
+  color: var(--pt-silver) !important;
+}
+
+.crumb {
+  color: var(--pt-silver) !important;
+}
+
+.crumb span {
+  color: var(--pt-silver) !important;
+}
+
+.crumb b {
+  color: var(--pt-gold) !important;
+}
+
+.icon-btn {
+  color: var(--pt-silver) !important;
+
+  border: 1px solid transparent !important;
+
+  background: transparent !important;
+}
+
+.icon-btn:hover {
+  color: var(--pt-gold-bright) !important;
+
+  background: var(--pt-navy-3) !important;
+
+  border-color: var(--pt-gold) !important;
+}
+
+/* =========================================================
+   AREA KONTEN
+   ========================================================= */
+
+.talenta-main {
+  background: var(--pt-navy) !important;
+}
+
+.page {
+  background: var(--pt-navy) !important;
+}
+
+/* =========================================================
+   JUDUL
+   ========================================================= */
+
+.page-heading h1 {
+  color: var(--pt-silver-bright) !important;
+
+  font-size: 24px !important;
+
+  line-height: 1.2 !important;
+}
+
+.page-heading p {
+  color: var(--pt-silver) !important;
+
+  line-height: 1.45 !important;
+}
+
+.eyebrow {
+  color: var(--pt-gold-bright) !important;
+}
+
+/* =========================================================
+   PANEL / CARD
+   ========================================================= */
+
+.panel,
+.stat-card,
+.mini-kpi,
+.org-card,
+.calendar-card,
+.feature-card,
+.report-card,
+.setting-card {
+  background: var(--pt-navy-2) !important;
+
+  color: var(--pt-silver) !important;
+
+  border:
+    1px solid var(--pt-gold) !important;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,.22) !important;
+}
+
+.panel-head {
+  border-bottom:
+    1px solid rgba(212,175,55,.35) !important;
+}
+
+.panel-head h2,
+.quick h2,
+.settings h2 {
+  color: var(--pt-silver-bright) !important;
+}
+
+.panel-head p {
+  color: var(--pt-silver) !important;
+}
+
+/* =========================================================
+   SEMUA TULISAN DI AREA ADMIN
+   ========================================================= */
+
+.talenta-main,
+.talenta-main p,
+.talenta-main span,
+.talenta-main small,
+.talenta-main label,
+.talenta-main td,
+.talenta-main th,
+.talenta-main li {
+  color: var(--pt-silver);
+}
+
+.talenta-main strong,
+.talenta-main b {
+  color: var(--pt-silver-bright);
+}
+
+/* =========================================================
+   TABEL
+   ========================================================= */
+
+.table-panel {
+  background: var(--pt-navy-2) !important;
+
+  border:
+    1px solid var(--pt-gold) !important;
+}
+
+.table-wrap {
+  width: 100% !important;
+
+  max-height: 55vh !important;
+
+  min-height: 250px !important;
+
+  overflow-y: scroll !important;
+
+  overflow-x: auto !important;
+
+  scrollbar-width: thin !important;
+
+  scrollbar-color:
+    var(--pt-silver)
+    var(--pt-navy) !important;
+}
+
+/* Chrome / Edge / Android Chromium */
+
+.table-wrap::-webkit-scrollbar {
+  width: 9px !important;
+  height: 9px !important;
+}
+
+.table-wrap::-webkit-scrollbar-track {
+  background: var(--pt-navy) !important;
+
+  border-left:
+    1px solid rgba(212,175,55,.25);
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(
+      180deg,
+      #e0e0e0,
+      #a8a8a8
+    ) !important;
+
+  border-radius: 10px !important;
+
+  border:
+    1px solid #d4af37 !important;
+}
+
+.table-wrap::-webkit-scrollbar-thumb:hover {
+  background: #e8e8e8 !important;
+}
+
+/* Header tabel */
+
+table th {
+  background: var(--pt-navy-3) !important;
+
+  color: var(--pt-gold-bright) !important;
+
+  border-bottom:
+    1px solid var(--pt-gold) !important;
+}
+
+table td {
+  color: var(--pt-silver) !important;
+
+  border-bottom:
+    1px solid rgba(192,192,192,.18) !important;
+}
+
+table tr:hover td {
+  background:
+    rgba(212,175,55,.08) !important;
+
+  color: var(--pt-silver-bright) !important;
+}
+
+/* =========================================================
+   INPUT / SEARCH
+   ========================================================= */
+
+.search-global,
+.toolbar input,
+.toolbar select,
+.toolbar-panel input,
+.toolbar-panel select,
+.filter,
+.form-grid input,
+.form-grid select,
+.form-grid textarea,
+.login-card input {
+  background: var(--pt-navy-3) !important;
+
+  color: var(--pt-silver-bright) !important;
+
+  border:
+    1px solid var(--pt-gold) !important;
+}
+
+.search-global input {
+  color: var(--pt-silver-bright) !important;
+}
+
+.search-global input::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: var(--pt-silver-dark) !important;
+}
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.talenta-main button.primary,
+.talenta-main button.primary-btn,
+.talenta-main button.btn-primary,
+.talenta-main button.secondary {
+  background: var(--pt-navy-3) !important;
+
+  color: var(--pt-silver-bright) !important;
+
+  border:
+    1px solid var(--pt-gold) !important;
+
+  box-shadow:
+    0 3px 12px rgba(0,0,0,.22) !important;
+}
+
+.talenta-main button.primary:hover,
+.talenta-main button.secondary:hover {
+  background: #173662 !important;
+
+  color: var(--pt-gold-bright) !important;
+
+  border-color:
+    var(--pt-gold-bright) !important;
+}
+
+/* =========================================================
+   PROFESSIONAL SUITE
+   ========================================================= */
+
+.professional-suite {
+  color: var(--pt-silver) !important;
+}
+
+.professional-suite .panel,
+.professional-suite .stat-card {
+  background: var(--pt-navy-2) !important;
+
+  border:
+    1px solid var(--pt-gold) !important;
+}
+
+.professional-suite .branch-tabs {
+  background: var(--pt-navy-2) !important;
+
+  border:
+    1px solid var(--pt-gold) !important;
+
+  padding: 5px !important;
+}
+
+.professional-suite .branch-tabs button {
+  background: transparent !important;
+
+  color: var(--pt-silver) !important;
+
+  border:
+    1px solid transparent !important;
+}
+
+.professional-suite .branch-tabs button:hover {
+  color: var(--pt-gold-bright) !important;
+
+  border-color: var(--pt-gold) !important;
+
+  background: var(--pt-navy-3) !important;
+}
+
+.professional-suite .branch-tabs button.active {
+  background: var(--pt-navy-3) !important;
+
+  color: var(--pt-gold-bright) !important;
+
+  border:
+    1px solid var(--pt-gold) !important;
+}
+
+/* =========================================================
+   LOADING DASHBOARD
+   ========================================================= */
+
+.pt-dashboard-loading {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 99999;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 22px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #102b58 0%,
+      #071a3d 48%,
+      #030d20 100%
+    );
+
+  color: var(--pt-silver);
+
+  animation: ptFadeIn .25s ease-out;
+}
+
+.pt-loading-logo {
+  width: 78px;
+
+  height: 78px;
+
+  padding: 12px;
+
+  border:
+    1px solid var(--pt-gold);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 30px rgba(212,175,55,.20);
+
+  animation:
+    ptLogoPulse 1.6s ease-in-out infinite;
+}
+
+.pt-loading-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pt-loading-ring {
+  width: 48px;
+
+  height: 48px;
+
+  border:
+    3px solid rgba(192,192,192,.20);
+
+  border-top-color:
+    var(--pt-gold);
+
+  border-right-color:
+    var(--pt-silver);
+
+  border-radius: 50%;
+
+  animation:
+    ptSpin .8s linear infinite;
+}
+
+.pt-loading-title {
+  color: var(--pt-silver-bright);
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  letter-spacing: .3px;
+}
+
+.pt-loading-subtitle {
+  color: var(--pt-silver-dark);
+
+  font-size: 11px;
+}
+
+.pt-loading-bar {
+  width: 220px;
+
+  height: 3px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: rgba(192,192,192,.15);
+}
+
+.pt-loading-bar span {
+  display: block;
+
+  width: 45%;
+
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--pt-gold),
+      var(--pt-silver),
+      var(--pt-gold)
+    );
+
+  animation:
+    ptLoadingBar 1.2s ease-in-out infinite;
+}
+
+@keyframes ptSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ptLogoPulse {
+  0%,100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 20px rgba(212,175,55,.12);
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow:
+      0 0 35px rgba(212,175,55,.30);
+  }
+}
+
+@keyframes ptLoadingBar {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(480%);
+  }
+}
+
+@keyframes ptFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
