@@ -1658,6 +1658,7 @@ textarea:focus {
     -webkit-overflow-scrolling: touch;
   }
 }
+<<<<<<< HEAD
 /* =========================================================
    PROJECT BY TIRTA — TABLE SCROLLBAR
    Scrollbar tabel tetap terlihat
@@ -1672,12 +1673,28 @@ textarea:focus {
   overflow-y: scroll !important;
 
   scrollbar-width: thin !important;
+=======
+
+/* FORCE VISIBLE TABLE SCROLLBAR */
+.table-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  max-height: 60vh !important;
+  overflow-x: auto !important;
+  overflow-y: scroll !important;
+  scrollbar-width: auto !important;
+>>>>>>> 777f252 (Force visible table scrollbar)
   scrollbar-color: #D4AF37 #111A2D !important;
 }
 
 .table-wrap::-webkit-scrollbar {
+<<<<<<< HEAD
   width: 10px !important;
   height: 10px !important;
+=======
+  width: 12px !important;
+  height: 12px !important;
+>>>>>>> 777f252 (Force visible table scrollbar)
 }
 
 .table-wrap::-webkit-scrollbar-track {
@@ -1686,10 +1703,19 @@ textarea:focus {
 
 .table-wrap::-webkit-scrollbar-thumb {
   background: #D4AF37 !important;
+<<<<<<< HEAD
   border-radius: 10px !important;
+=======
+  border-radius: 8px !important;
+>>>>>>> 777f252 (Force visible table scrollbar)
   border: 2px solid #111A2D !important;
 }
 
 .table-wrap::-webkit-scrollbar-thumb:hover {
   background: #F0D56A !important;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 777f252 (Force visible table scrollbar)
