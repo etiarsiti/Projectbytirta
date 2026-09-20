@@ -2333,3 +2333,388 @@ textarea::placeholder {
     opacity: 1;
   }
 }
+/* =========================================================
+   PROJECT BY TIRTA — FINAL DARK NAVY / SILVER / GOLD
+   Tempel PALING BAWAH admin.css
+   ========================================================= */
+
+:root {
+  --mx-primary: #0b1736 !important;
+  --mx-accent: #d4af37 !important;
+  --mx-background: #071126 !important;
+  --mx-surface: #0b1222 !important;
+  --mx-text: #c0c0c0 !important;
+  --mx-text-secondary: #b8b8b8 !important;
+  --mx-text-muted: #9299a8 !important;
+  --mx-border: #d4af37 !important;
+}
+
+/* =========================================================
+   1. BACKGROUND UTAMA
+   ========================================================= */
+
+html,
+body,
+#root {
+  background: #071126 !important;
+  color: #c0c0c0 !important;
+}
+
+.talenta-shell,
+.talenta-main,
+.page,
+.admin-main,
+.dashboard-main,
+.page-content,
+.content-area {
+  background: #071126 !important;
+  color: #c0c0c0 !important;
+}
+
+/* =========================================================
+   2. SIDEBAR
+   ========================================================= */
+
+.talenta-sidebar {
+  background: #080f20 !important;
+  color: #c0c0c0 !important;
+  border-right: 1px solid #d4af37 !important;
+}
+
+.talenta-sidebar .brand,
+.talenta-sidebar .brand b,
+.talenta-sidebar .brand small {
+  color: #c0c0c0 !important;
+}
+
+.talenta-sidebar .group-title {
+  background: transparent !important;
+  color: #9299a8 !important;
+}
+
+/* Menu */
+.talenta-sidebar .nav-item {
+  background: transparent !important;
+  color: #c0c0c0 !important;
+  border: 1px solid transparent !important;
+}
+
+/* Menu hover */
+.talenta-sidebar .nav-item:hover {
+  background: #111d38 !important;
+  color: #ffffff !important;
+  border: 1px solid #d4af37 !important;
+  box-shadow: 0 0 10px rgba(212,175,55,.20) !important;
+}
+
+/* Menu aktif */
+.talenta-sidebar .nav-item.active {
+  background: #172441 !important;
+  color: #d4af37 !important;
+  border: 1px solid #d4af37 !important;
+  box-shadow: 0 0 12px rgba(212,175,55,.18) !important;
+}
+
+.talenta-sidebar .nav-item span,
+.talenta-sidebar .nav-item svg {
+  color: inherit !important;
+}
+
+/* =========================================================
+   3. TOPBAR
+   ========================================================= */
+
+.topbar {
+  background: #080f20 !important;
+  color: #c0c0c0 !important;
+  border-bottom: 1px solid #d4af37 !important;
+}
+
+.crumb,
+.crumb span,
+.crumb b {
+  color: #c0c0c0 !important;
+}
+
+.search-global {
+  background: #0d1830 !important;
+  border: 1px solid #d4af37 !important;
+}
+
+.search-global input {
+  background: transparent !important;
+  color: #c0c0c0 !important;
+}
+
+.search-global input::placeholder {
+  color: #7f8798 !important;
+}
+
+/* =========================================================
+   4. SEMUA KOTAK / CARD / PANEL JADI HITAM
+   ========================================================= */
+
+.panel,
+.card,
+.dashboard-card,
+.stat-card,
+.table-panel,
+.form-panel,
+.report-card,
+.mini-kpi,
+.org-card,
+.calendar-card,
+.feature-card,
+.setting-card,
+.detail-panel,
+.info-box,
+.toolbar-panel,
+.branch-nav,
+.quick,
+.drawer-body,
+.theme-manager-header,
+.custom-theme-panel {
+  background: #0b1222 !important;
+  color: #c0c0c0 !important;
+  border: 1px solid #d4af37 !important;
+  box-shadow: 0 5px 20px rgba(0,0,0,.30) !important;
+}
+
+/* Header di dalam panel */
+.panel-head,
+.panel-head h2,
+.panel-head p,
+.quick h2,
+.quick p {
+  color: #c0c0c0 !important;
+}
+
+/* =========================================================
+   5. JUDUL DAN TEKS
+   ========================================================= */
+
+.page-heading h1,
+.page-heading h2,
+.page-heading h3,
+.panel h1,
+.panel h2,
+.panel h3,
+.stat-card strong,
+.mini-kpi b,
+.report-card b {
+  color: #c0c0c0 !important;
+}
+
+.page-heading p,
+.panel-head p,
+.org-card p,
+.calendar-card p,
+.feature-card p,
+.report-card p,
+.setting-card p,
+.quick p {
+  color: #9299a8 !important;
+}
+
+/* =========================================================
+   6. CARD STATISTIK
+   ========================================================= */
+
+.stat-card,
+.mini-kpi {
+  background: #0b1222 !important;
+  border-color: #d4af37 !important;
+}
+
+.stat-card span,
+.stat-card small,
+.mini-kpi span {
+  color: #9299a8 !important;
+}
+
+.stat-card strong,
+.mini-kpi b {
+  color: #c0c0c0 !important;
+}
+
+.stat-icon {
+  background: #172441 !important;
+  color: #d4af37 !important;
+  border: 1px solid #d4af37 !important;
+}
+
+/* =========================================================
+   7. TABEL
+   ========================================================= */
+
+.table-panel {
+  background: #0b1222 !important;
+}
+
+.table-wrap {
+  max-height: calc(100vh - 270px) !important;
+
+  overflow-y: scroll !important;
+  overflow-x: auto !important;
+
+  scrollbar-width: thin !important;
+  scrollbar-color: #d4af37 #111a2d !important;
+}
+
+/* Chrome / Android / Edge */
+.table-wrap::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.table-wrap::-webkit-scrollbar-track {
+  background: #111a2d !important;
+  border-left: 1px solid #26334e !important;
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+  background: #d4af37 !important;
+  border-radius: 10px !important;
+  border: 2px solid #111a2d !important;
+}
+
+.table-wrap::-webkit-scrollbar-thumb:hover {
+  background: #f0cf69 !important;
+}
+
+/* Tabel */
+table {
+  color: #c0c0c0 !important;
+}
+
+th {
+  background: #101a30 !important;
+  color: #d4af37 !important;
+  border-bottom: 1px solid #d4af37 !important;
+}
+
+td {
+  background: #0b1222 !important;
+  color: #c0c0c0 !important;
+  border-bottom: 1px solid #27334a !important;
+}
+
+td b {
+  color: #c0c0c0 !important;
+}
+
+td small {
+  color: #858da0 !important;
+}
+
+tr:hover td {
+  background: #14213d !important;
+}
+
+/* =========================================================
+   8. QUICK ACTION / LIST
+   ========================================================= */
+
+.quick-action,
+.list-select,
+.assignment-row {
+  background: #0b1222 !important;
+  color: #c0c0c0 !important;
+  border-color: #27334a !important;
+}
+
+.quick-action:hover,
+.list-select:hover,
+.list-select.active {
+  background: #172441 !important;
+  color: #d4af37 !important;
+  border-color: #d4af37 !important;
+}
+
+/* =========================================================
+   9. TOMBOL
+   ========================================================= */
+
+.talenta-main .primary,
+.talenta-main button.primary {
+  background: #101a33 !important;
+  color: #d4af37 !important;
+  border: 1px solid #d4af37 !important;
+}
+
+.talenta-main .primary:hover,
+.talenta-main button.primary:hover {
+  background: #172441 !important;
+  color: #f0cf69 !important;
+  border-color: #f0cf69 !important;
+}
+
+.talenta-main .secondary,
+.talenta-main button.secondary {
+  background: #0b1222 !important;
+  color: #c0c0c0 !important;
+  border: 1px solid #d4af37 !important;
+}
+
+.talenta-main .secondary:hover,
+.talenta-main button.secondary:hover {
+  background: #172441 !important;
+  color: #d4af37 !important;
+}
+
+/* =========================================================
+   10. INPUT / SELECT
+   ========================================================= */
+
+input,
+select,
+textarea,
+.filter {
+  background: #0b1222 !important;
+  color: #c0c0c0 !important;
+  border: 1px solid #d4af37 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #737c90 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #f0cf69 !important;
+  box-shadow: 0 0 0 2px rgba(212,175,55,.15) !important;
+}
+
+/* =========================================================
+   11. BADGE
+   ========================================================= */
+
+.badge-soft {
+  background: #172441 !important;
+  color: #d4af37 !important;
+  border: 1px solid #d4af37 !important;
+}
+
+/* =========================================================
+   12. MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .page {
+    background: #071126 !important;
+  }
+
+  .table-wrap {
+    max-height: calc(100vh - 220px) !important;
+    overflow-y: scroll !important;
+    overflow-x: auto !important;
+  }
+
+  .talenta-sidebar {
+    background: #080f20 !important;
+  }
+
+}
