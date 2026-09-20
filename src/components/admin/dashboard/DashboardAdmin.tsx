@@ -378,7 +378,13 @@ export default function DashboardAdmin() {
     setUserRole(profile.role);
     const { data: rp } = await supabase.from('hris_role_permissions').select('permission_code').eq('role_name', profile.role);
     setDbPerms((rp || []).map(x => x.permission_code));
-    setLogged(true);
+
+setDashboardEntering(true);
+
+await new Promise(resolve => setTimeout(resolve, 1100));
+
+setDashboardEntering(false);
+setLogged(true);
   }
 
   async function removeEmployee(k: Karyawan) {
@@ -433,6 +439,29 @@ export default function DashboardAdmin() {
   };
 
   if (sessionChecking) return <div className="login-wrap"><div className="login-card"><div className="loading">Memeriksa sesi keamanan...</div></div></div>;
+  if (dashboardEntering) {
+  return (
+    <div className="pt-dashboard-loading">
+      <div className="pt-loading-logo">
+        <img src={moonLogo} alt="Project by Tirta" />
+      </div>
+
+      <div className="pt-loading-ring" />
+
+      <div className="pt-loading-title">
+        Menyiapkan Dashboard
+      </div>
+
+      <div className="pt-loading-subtitle">
+        Project by Tirta · People Platform
+      </div>
+
+      <div className="pt-loading-bar">
+        <span />
+      </div>
+    </div>
+  );
+  }
   if (!logged) return <Login email={email} pin={pin} setEmail={setEmail} setPin={setPin} onSubmit={login} loading={loading} error={error}/>;
   return (
    <div className="talenta-shell">
@@ -570,7 +599,13 @@ return (
 </div>
 <div className="top-actions"><div className="search-global"><span><Icon name="search"/></span><input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Cari data..."/></div><button className="icon-btn" aria-label="Muat ulang" onClick={()=>refresh()}><Icon name="refresh"/></button><div className="avatar">HR</div></div></header>
     <section className="page">{loading&&<div className="loading">Memuat data…</div>}{error&&<div className="alert">{error}</div>}
-    {menu==='overview'&&<Overview employees={employees} attendance={attendance} present={present} late={late} payroll={payroll} onNavigate={navigate}/>}
+    {menu==='professional-suite'&&
+  <ProfessionalSuite
+    employees={employees}
+    attendance={attendance}
+    onNavigate={navigate}
+  />
+>}
     {menu==='id-card'&&<IDCardModule employees={employees} companyName="Project by Tirta" logoUrl={moonLogo}/> }
     {menu==='employees'&&<Employees data={filtered} onDelete={removeEmployee} onEdit={setEditing} onExport={(columns, format)=>format==='excel' ? exportExcel(employees as any,'database-karyawan.xls',columns) : exportCsv(employees as any,'database-karyawan.csv',columns)} onAdd={()=>navigate('employee-add')} onConfirmEmail={confirmEmployeeEmail}/> }
     {menu==='employee-360'&&<Employee360 employees={employees}/>}
