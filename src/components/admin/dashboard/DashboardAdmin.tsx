@@ -12,6 +12,7 @@ import Employee360 from '../employee/Employee360';
 import HRISCore from '../core/HRISCore';
 import ProductionHR from '../payroll/ProductionHR';
 import EnterpriseV20 from '../enterprise/EnterpriseV20';
+import ProfessionalSuite from '../enterprise/ProfessionalSuite';
 import SecurityCenterV21 from '../security/SecurityCenterV21';
 import PayrollProductionV22 from '../payroll/PayrollProductionV22';
 import RecruitmentATSv25 from '../recruitment/RecruitmentATSv25';
