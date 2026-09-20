@@ -1500,3 +1500,70 @@ aside.sidebar,
 .export-foot{display:flex;justify-content:flex-end;gap:8px;margin-top:18px;padding-top:15px;border-top:1px solid #EEF2F6}
 @media(max-width:900px){.floating-role-wrap{position:fixed;top:10px}.topbar{position:relative}.crumb{max-width:35%}}
 @media(max-width:600px){.floating-role strong{display:none}.floating-role{width:42px;justify-content:center;padding:0}.role-menu{right:0;left:auto;transform:none}.export-columns{grid-template-columns:1fr}.export-foot{flex-wrap:wrap}}
+/* =========================================================
+   SIDEBAR - SMOOTH HOVER FRAME
+   Bingkai mengikuti menu yang sedang terkena cursor
+   ========================================================= */
+
+.sidebar .nav-item {
+  position: relative !important;
+  border: 1px solid transparent !important;
+  border-radius: 10px !important;
+
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease,
+    color 0.18s ease !important;
+}
+
+/* Saat cursor berada di menu */
+.sidebar .nav-item:hover {
+  background: #ffffff !important;
+  border: 1px solid #dfe4ec !important;
+
+  box-shadow:
+    0 2px 7px rgba(16, 24, 40, 0.10) !important;
+
+  color: #172033 !important;
+
+  transform: translateX(2px);
+}
+
+/* Icon ikut berubah */
+.sidebar .nav-item:hover svg {
+  color: #172033 !important;
+  stroke: currentColor !important;
+}
+
+/* Text ikut berubah */
+.sidebar .nav-item:hover span {
+  color: #172033 !important;
+}
+
+/* =========================================================
+   MENU AKTIF
+   Tetap berbeda dari hover
+   ========================================================= */
+
+.sidebar .nav-item.active {
+  background: #fff4d6 !important;
+  border: 1px solid #d6ae58 !important;
+  color: #7a5b12 !important;
+
+  box-shadow:
+    0 2px 8px rgba(214, 174, 88, 0.16) !important;
+
+  transform: none;
+}
+
+.sidebar .nav-item.active span {
+  color: #7a5b12 !important;
+}
+
+.sidebar .nav-item.active svg {
+  color: #7a5b12 !important;
+  stroke: currentColor !important;
+}
+
