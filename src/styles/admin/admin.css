@@ -1566,4 +1566,154 @@ aside.sidebar,
   color: #7a5b12 !important;
   stroke: currentColor !important;
 }
+/* =========================================================
+   PROJECT BY TIRTA — FINAL SIDEBAR INTERACTION
+   Tempelkan kode ini PALING BAWAH admin.css
+   ========================================================= */
 
+/* Sidebar tetap bisa discroll */
+.talenta-sidebar {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scrollbar-width: thin;
+}
+
+/* Group PEOPLE, ATTENDANCE, dll */
+.talenta-sidebar .group-title {
+  cursor: pointer !important;
+  user-select: none;
+  transition: color .18s ease, background .18s ease;
+}
+
+/* Item menu */
+.talenta-sidebar .nav-item {
+  position: relative !important;
+  width: 100%;
+  border: 1px solid transparent !important;
+  border-radius: 10px !important;
+  transition:
+    background-color .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease,
+    transform .18s ease,
+    color .18s ease !important;
+}
+
+/* =========================================================
+   BINGKAI MENGIKUTI CURSOR
+   ========================================================= */
+
+.talenta-sidebar .nav-item:hover {
+  background: #ffffff !important;
+  border: 1px solid #dfe4ec !important;
+  color: #172033 !important;
+
+  box-shadow:
+    0 2px 8px rgba(16, 24, 40, .10) !important;
+
+  transform: translateX(2px);
+}
+
+/* Text saat hover */
+.talenta-sidebar .nav-item:hover span {
+  color: #172033 !important;
+}
+
+/* Icon saat hover */
+.talenta-sidebar .nav-item:hover svg {
+  color: #172033 !important;
+  stroke: currentColor !important;
+}
+
+/* =========================================================
+   MENU AKTIF
+   Aktif tetap terlihat walaupun cursor pindah
+   ========================================================= */
+
+.talenta-sidebar .nav-item.active {
+  background: #fff4d6 !important;
+  border: 1px solid #d6ae58 !important;
+  color: #7a5b12 !important;
+
+  box-shadow:
+    0 2px 8px rgba(214, 174, 88, .16) !important;
+
+  transform: none !important;
+}
+
+/* Text menu aktif */
+.talenta-sidebar .nav-item.active span {
+  color: #7a5b12 !important;
+  font-weight: 700 !important;
+}
+
+/* Icon menu aktif */
+.talenta-sidebar .nav-item.active svg {
+  color: #7a5b12 !important;
+  stroke: currentColor !important;
+}
+
+/* =========================================================
+   GROUP TITLE / PEOPLE
+   ========================================================= */
+
+.talenta-sidebar .group-title:hover {
+  color: #d6ae58 !important;
+}
+
+/* =========================================================
+   SCROLLBAR SIDEBAR
+   ========================================================= */
+
+.talenta-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.talenta-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.talenta-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(214, 174, 88, .55);
+  border-radius: 10px;
+}
+
+.talenta-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #d6ae58;
+}
+
+/* =========================================================
+   GROUP YANG DIBUKA/TUTUP
+   ========================================================= */
+
+.talenta-sidebar .nav-group-items {
+  overflow: hidden;
+  transition:
+    max-height .22s ease,
+    opacity .18s ease;
+}
+
+/* Panah group */
+.talenta-sidebar .nav-group-arrow {
+  display: inline-flex;
+  transition: transform .2s ease;
+}
+
+.talenta-sidebar .nav-group-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .talenta-sidebar {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .talenta-sidebar .nav-item {
+    min-height: 42px;
+  }
+}
