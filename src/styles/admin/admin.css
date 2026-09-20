@@ -505,24 +505,6 @@
     white-space: nowrap;
   }
 }
-/* =========================================================
-   PROJECT BY TIRTA THEME MANAGER
-   ========================================================= */
-
-:root {
-  --mx-primary: #101a33;
-  --mx-accent: #d6ae58;
-
-  --mx-background: #f6f7fb;
-  --mx-surface: #ffffff;
-
-  --mx-text: #172033;
-  --mx-text-secondary: #344054;
-  --mx-text-muted: #667085;
-
-  --mx-border: #e2e7ee;
-  --mx-border-strong: #cbd2dc;
-}
 
 /* Theme message */
 
@@ -877,24 +859,6 @@
     flex:none;
   }
 
-}
-/* =========================================================
-   MOONXPROJECt CUSTOM THEME SYSTEM
-   ========================================================= */
-
-:root {
-  --mx-primary: #101a33;
-  --mx-accent: #d6ae58;
-  --mx-background: #f6f7fb;
-  --mx-surface: #ffffff;
-  --mx-text: #172033;
-  --mx-border: #d6ae58;
-
-  --blue: var(--mx-accent);
-  --ink: var(--mx-text);
-  --line: var(--mx-border);
-  --surface: var(--mx-surface);
-  --bg: var(--mx-background);
 }
 
 /* Dashboard background */
@@ -1277,205 +1241,6 @@ table td {
   }
 }
 
-/* =========================================================
-   PROJECT BY TIRTA — FINAL VISIBILITY / CONTRAST PATCH
-   ========================================================= */
-.talenta-shell{color:#172033 !important;}
-.talenta-sidebar{
-  background:linear-gradient(180deg,#0b1630 0%,#101d3b 100%) !important;
-  color:#ffffff !important;
-  border-right:1px solid rgba(255,255,255,.12) !important;
-}
-.talenta-sidebar .brand b{color:#ffffff !important;}
-.talenta-sidebar .brand small{color:#aab6ca !important;}
-.talenta-sidebar .workspace{
-  background:rgba(255,255,255,.055) !important;
-  border-color:rgba(255,255,255,.12) !important;
-  color:#b7c1d1 !important;
-}
-.talenta-sidebar .workspace b{color:#ffffff !important;}
-.talenta-sidebar .workspace small{color:#aab6ca !important;}
-.talenta-sidebar .group-title{color:#aab6ca !important;}
-.talenta-sidebar .nav-item{
-  background:transparent !important;
-  color:#d5dce8 !important;
-}
-.talenta-sidebar .nav-item:hover{
-  background:rgba(255,255,255,.10) !important;
-  color:#ffffff !important;
-}
-.talenta-sidebar .nav-item.active{
-  background:linear-gradient(90deg,rgba(202,167,94,.30),rgba(202,167,94,.12)) !important;
-  color:#ffe39a !important;
-  box-shadow:inset 3px 0 0 #d6ae58 !important;
-}
-.talenta-sidebar .nav-item em{
-  background:rgba(255,255,255,.12) !important;
-  color:#e5ebf4 !important;
-}
-.talenta-sidebar .admin-mini{border-top-color:rgba(255,255,255,.12) !important;}
-.talenta-sidebar .admin-mini b{color:#ffffff !important;}
-.talenta-sidebar .admin-mini small{color:#aab6ca !important;}
-.talenta-sidebar .logout{color:#ffb4b4 !important;}
-.talenta-sidebar .logout:hover{background:rgba(255,255,255,.08) !important;color:#ffffff !important;}
-
-.talenta-main{background:#f6f7fb !important;color:#172033 !important;}
-.talenta-main .topbar{background:#ffffff !important;color:#172033 !important;border-bottom:1px solid #e4e8ef !important;}
-.talenta-main .crumb{color:#172033 !important;}
-.talenta-main .crumb span{color:#667085 !important;}
-.talenta-main .icon-btn{color:#344054 !important;}
-.talenta-main .search-global{background:#ffffff !important;border-color:#d8dee8 !important;}
-.talenta-main .search-global input{color:#172033 !important;}
-.talenta-main .search-global input::placeholder{color:#98a2b3 !important;}
-.talenta-main .page-heading h1,.talenta-main h1,.talenta-main h2,.talenta-main h3,.talenta-main h4,.talenta-main h5,.talenta-main strong{color:#172033;}
-.talenta-main p,.talenta-main label{color:#475467;}
-.talenta-main .panel,.talenta-main .stat-card,.talenta-main .mini-kpi,.talenta-main .org-card,.talenta-main .calendar-card,.talenta-main .feature-card,.talenta-main .report-card,.talenta-main .setting-card,.talenta-main .toolbar-panel{
-  background:#ffffff !important;
-  color:#172033 !important;
-}
-.talenta-main td{color:#344054 !important;}
-.talenta-main th{color:#475467 !important;background:#f8fafc !important;}
-.talenta-main input,
-.talenta-main select,
-.talenta-main textarea {
-  background: #ffffff !important;
-  color: #172033 !important;
-  border: 1px solid #cbd2dc !important;
-}
-
-.talenta-main input::placeholder,
-.talenta-main textarea::placeholder {
-  color: #98a2b3 !important;
-}
-
-.talenta-main input:focus,
-.talenta-main select:focus,
-.talenta-main textarea:focus {
-  border-color: #d6ae58 !important;
-  box-shadow: 0 0 0 3px rgba(214, 174, 88, 0.15) !important;
-}
-/* Prevent theme variables from ever becoming self-referential. */
-:root {
-  --mx-primary: #101a33;
-  --mx-accent: #d6ae58;
-
-  --mx-background: #f6f7fb;
-  --mx-surface: #ffffff;
-
-  --mx-text: #172033;
-  --mx-text-secondary: #344054;
-  --mx-text-muted: #667085;
-
-  --mx-border: #e2e7ee;
-  --mx-border-strong: #cbd2dc;
-}
-/* =========================================================
-   FINAL SIDEBAR VISIBILITY FIX
-   ========================================================= */
-
-aside.sidebar,
-.sidebar {
-  background: #ffffff !important;
-  color: #172033 !important;
-  opacity: 1 !important;
-}
-
-/* Brand */
-.sidebar .brand b {
-  color: #172033 !important;
-}
-
-.sidebar .brand small {
-  color: #667085 !important;
-}
-
-/* Judul group */
-.sidebar .nav-title,
-.sidebar .group-title {
-  color: #475467 !important;
-  opacity: 1 !important;
-  font-weight: 800 !important;
-}
-
-/* Menu */
-.sidebar .nav-item {
-  background: transparent !important;
-  color: #344054 !important;
-  opacity: 1 !important;
-  border: 1px solid transparent !important;
-}
-
-/* Text menu */
-.sidebar .nav-item span {
-  color: #344054 !important;
-  opacity: 1 !important;
-}
-
-/* Icon */
-.sidebar .nav-item svg {
-  color: #344054 !important;
-  stroke: #344054 !important;
-  opacity: 1 !important;
-}
-
-/* Hover */
-.sidebar .nav-item:hover {
-  background: #f2f4f7 !important;
-  color: #101828 !important;
-}
-
-/* Active */
-.sidebar .nav-item.active {
-  background: #fff4d6 !important;
-  color: #7a5b12 !important;
-  border-left: 3px solid #d6ae58 !important;
-}
-
-/* Active text */
-.sidebar .nav-item.active span {
-  color: #7a5b12 !important;
-  font-weight: 700 !important;
-}
-
-/* Workspace */
-.sidebar .workspace {
-  color: #667085 !important;
-  background: #ffffff !important;
-}
-
-.sidebar .workspace b {
-  color: #172033 !important;
-}
-
-.sidebar .workspace small {
-  color: #667085 !important;
-}
-
-/* Admin */
-.sidebar .admin-mini b {
-  color: #172033 !important;
-}
-
-.sidebar .admin-mini small {
-  color: #667085 !important;
-}
-
-/* Language */
-.sidebar .sidebar-bottom {
-  color: #344054 !important;
-}
-
-.sidebar .sidebar-bottom select {
-  background: #ffffff !important;
-  color: #172033 !important;
-  border: 1px solid #98a2b3 !important;
-}
-
-/* Logout */
-.sidebar .logout {
-  color: #b42318 !important;
-}
-
 /* Project by Tirta role badge + employee export */
 .floating-role-wrap{position:absolute;left:50%;transform:translateX(-50%);z-index:30}
 .floating-role{height:38px;padding:0 12px 0 10px;border:1px solid #D6B56A;border-radius:999px;background:#fff;color:#0B1736;display:flex;align-items:center;gap:8px;box-shadow:0 8px 22px rgba(11,23,54,.10);font-size:11px}
@@ -1500,845 +1265,23 @@ aside.sidebar,
 .export-foot{display:flex;justify-content:flex-end;gap:8px;margin-top:18px;padding-top:15px;border-top:1px solid #EEF2F6}
 @media(max-width:900px){.floating-role-wrap{position:fixed;top:10px}.topbar{position:relative}.crumb{max-width:35%}}
 @media(max-width:600px){.floating-role strong{display:none}.floating-role{width:42px;justify-content:center;padding:0}.role-menu{right:0;left:auto;transform:none}.export-columns{grid-template-columns:1fr}.export-foot{flex-wrap:wrap}}
-/* =========================================================
-   SIDEBAR - SMOOTH HOVER FRAME
-   Bingkai mengikuti menu yang sedang terkena cursor
-   ========================================================= */
-
-.sidebar .nav-item {
-  position: relative !important;
-  border: 1px solid transparent !important;
-  border-radius: 10px !important;
-
-  transition:
-    background-color 0.18s ease,
-    border-color 0.18s ease,
-    box-shadow 0.18s ease,
-    transform 0.18s ease,
-    color 0.18s ease !important;
-}
-
-/* Saat cursor berada di menu */
-.sidebar .nav-item:hover {
-  background: #ffffff !important;
-  border: 1px solid #dfe4ec !important;
-
-  box-shadow:
-    0 2px 7px rgba(16, 24, 40, 0.10) !important;
-
-  color: #172033 !important;
-
-  transform: translateX(2px);
-}
-
-/* Icon ikut berubah */
-.sidebar .nav-item:hover svg {
-  color: #172033 !important;
-  stroke: currentColor !important;
-}
-
-/* Text ikut berubah */
-.sidebar .nav-item:hover span {
-  color: #172033 !important;
-}
 
 /* =========================================================
-   MENU AKTIF
-   Tetap berbeda dari hover
-   ========================================================= */
-
-.sidebar .nav-item.active {
-  background: #fff4d6 !important;
-  border: 1px solid #d6ae58 !important;
-  color: #7a5b12 !important;
-
-  box-shadow:
-    0 2px 8px rgba(214, 174, 88, 0.16) !important;
-
-  transform: none;
-}
-
-.sidebar .nav-item.active span {
-  color: #7a5b12 !important;
-}
-
-.sidebar .nav-item.active svg {
-  color: #7a5b12 !important;
-  stroke: currentColor !important;
-}
-/* =========================================================
-   PROJECT BY TIRTA — FINAL SIDEBAR INTERACTION
-   Tempelkan kode ini PALING BAWAH admin.css
-   ========================================================= */
-
-/* Sidebar tetap bisa discroll */
-.talenta-sidebar {
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  scrollbar-width: thin;
-}
-
-/* Group PEOPLE, ATTENDANCE, dll */
-.talenta-sidebar .group-title {
-  cursor: pointer !important;
-  user-select: none;
-  transition: color .18s ease, background .18s ease;
-}
-
-/* Item menu */
-.talenta-sidebar .nav-item {
-  position: relative !important;
-  width: 100%;
-  border: 1px solid transparent !important;
-  border-radius: 10px !important;
-  transition:
-    background-color .18s ease,
-    border-color .18s ease,
-    box-shadow .18s ease,
-    transform .18s ease,
-    color .18s ease !important;
-}
-
-/* =========================================================
-   BINGKAI MENGIKUTI CURSOR
-   ========================================================= */
-
-.talenta-sidebar .nav-item:hover {
-  background: #ffffff !important;
-  border: 1px solid #dfe4ec !important;
-  color: #172033 !important;
-
-  box-shadow:
-    0 2px 8px rgba(16, 24, 40, .10) !important;
-
-  transform: translateX(2px);
-}
-
-/* Text saat hover */
-.talenta-sidebar .nav-item:hover span {
-  color: #172033 !important;
-}
-
-/* Icon saat hover */
-.talenta-sidebar .nav-item:hover svg {
-  color: #172033 !important;
-  stroke: currentColor !important;
-}
-
-/* =========================================================
-   MENU AKTIF
-   Aktif tetap terlihat walaupun cursor pindah
-   ========================================================= */
-
-.talenta-sidebar .nav-item.active {
-  background: #fff4d6 !important;
-  border: 1px solid #d6ae58 !important;
-  color: #7a5b12 !important;
-
-  box-shadow:
-    0 2px 8px rgba(214, 174, 88, .16) !important;
-
-  transform: none !important;
-}
-
-/* Text menu aktif */
-.talenta-sidebar .nav-item.active span {
-  color: #7a5b12 !important;
-  font-weight: 700 !important;
-}
-
-/* Icon menu aktif */
-.talenta-sidebar .nav-item.active svg {
-  color: #7a5b12 !important;
-  stroke: currentColor !important;
-}
-
-/* =========================================================
-   GROUP TITLE / PEOPLE
-   ========================================================= */
-
-.talenta-sidebar .group-title:hover {
-  color: #d6ae58 !important;
-}
-
-/* =========================================================
-   SCROLLBAR SIDEBAR
-   ========================================================= */
-
-.talenta-sidebar::-webkit-scrollbar {
-  width: 6px;
-}
-
-.talenta-sidebar::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.talenta-sidebar::-webkit-scrollbar-thumb {
-  background: rgba(214, 174, 88, .55);
-  border-radius: 10px;
-}
-
-.talenta-sidebar::-webkit-scrollbar-thumb:hover {
-  background: #d6ae58;
-}
-
-/* =========================================================
-   GROUP YANG DIBUKA/TUTUP
-   ========================================================= */
-
-.talenta-sidebar .nav-group-items {
-  overflow: hidden;
-  transition:
-    max-height .22s ease,
-    opacity .18s ease;
-}
-
-/* Panah group */
-.talenta-sidebar .nav-group-arrow {
-  display: inline-flex;
-  transition: transform .2s ease;
-}
-
-.talenta-sidebar .nav-group-arrow.open {
-  transform: rotate(180deg);
-}
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 800px) {
-  .talenta-sidebar {
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .talenta-sidebar .nav-item {
-    min-height: 42px;
-  }
-}
-/* =========================================================
-   PROJECT BY TIRTA — NAVY / SILVER / GOLD THEME
+   PROJECT BY TIRTA — CLEAN FINAL THEME
+   Navy / Silver / Gold
+   Satu sumber override — tidak menimpa dengan tema putih
    ========================================================= */
 
 :root {
-  --pt-navy: #071a3d;
-  --pt-navy-2: #0b2148;
-  --pt-navy-3: #102b58;
+  --blue: #0b1736 !important;
+  --blue2: #12244d !important;
+  --blue-soft: #172441 !important;
+  --ink: #c0c0c0 !important;
+  --muted: #9299a8 !important;
+  --line: #d4af37 !important;
+  --surface: #0b1222 !important;
+  --bg: #071126 !important;
 
-  --pt-silver: #c0c0c0;
-  --pt-silver-bright: #e6e6e6;
-  --pt-silver-dark: #9f9f9f;
-
-  --pt-gold: #d4af37;
-  --pt-gold-bright: #f0cf62;
-
-  --pt-border: rgba(212, 175, 55, .75);
-}
-
-/* =========================================================
-   BACKGROUND UTAMA
-   ========================================================= */
-
-.talenta-shell {
-  background: var(--pt-navy) !important;
-  color: var(--pt-silver) !important;
-}
-
-/* =========================================================
-   SIDEBAR
-   ========================================================= */
-
-.sidebar {
-  background:
-    linear-gradient(
-      180deg,
-      #061633 0%,
-      #081d42 100%
-    ) !important;
-
-  border-right: 1px solid var(--pt-gold) !important;
-  color: var(--pt-silver) !important;
-}
-
-.sidebar .brand b {
-  color: var(--pt-gold-bright) !important;
-}
-
-.sidebar .brand small {
-  color: var(--pt-silver) !important;
-}
-
-.sidebar .nav-title,
-.sidebar .group-title {
-  color: var(--pt-silver-dark) !important;
-}
-
-.sidebar .nav-item {
-  color: var(--pt-silver) !important;
-
-  background: transparent !important;
-
-  border: 1px solid transparent !important;
-
-  min-height: 42px !important;
-
-  display: flex !important;
-  align-items: center !important;
-
-  line-height: 1 !important;
-}
-
-.sidebar .nav-item span {
-  color: inherit !important;
-  line-height: 1 !important;
-}
-
-.sidebar .nav-item svg {
-  color: var(--pt-silver) !important;
-}
-
-/* Hover */
-
-.sidebar .nav-item:hover {
-  background: var(--pt-navy-3) !important;
-
-  color: var(--pt-silver-bright) !important;
-
-  border: 1px solid var(--pt-gold) !important;
-
-  box-shadow:
-    0 0 10px rgba(212,175,55,.12);
-
-  transform: none !important;
-}
-
-/* Aktif */
-
-.sidebar .nav-item.active {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(212,175,55,.18),
-      rgba(212,175,55,.06)
-    ) !important;
-
-  color: var(--pt-gold-bright) !important;
-
-  border: 1px solid var(--pt-gold) !important;
-
-  box-shadow:
-    inset 3px 0 0 var(--pt-gold),
-    0 0 12px rgba(212,175,55,.10);
-}
-
-.sidebar .nav-item.active span,
-.sidebar .nav-item.active svg {
-  color: var(--pt-gold-bright) !important;
-}
-
-/* =========================================================
-   TOPBAR
-   ========================================================= */
-
-.topbar {
-  background: var(--pt-navy-2) !important;
-
-  border-bottom:
-    1px solid var(--pt-gold) !important;
-
-  color: var(--pt-silver) !important;
-}
-
-.crumb {
-  color: var(--pt-silver) !important;
-}
-
-.crumb span {
-  color: var(--pt-silver) !important;
-}
-
-.crumb b {
-  color: var(--pt-gold) !important;
-}
-
-.icon-btn {
-  color: var(--pt-silver) !important;
-
-  border: 1px solid transparent !important;
-
-  background: transparent !important;
-}
-
-.icon-btn:hover {
-  color: var(--pt-gold-bright) !important;
-
-  background: var(--pt-navy-3) !important;
-
-  border-color: var(--pt-gold) !important;
-}
-
-/* =========================================================
-   AREA KONTEN
-   ========================================================= */
-
-.talenta-main {
-  background: var(--pt-navy) !important;
-}
-
-.page {
-  background: var(--pt-navy) !important;
-}
-
-/* =========================================================
-   JUDUL
-   ========================================================= */
-
-.page-heading h1 {
-  color: var(--pt-silver-bright) !important;
-
-  font-size: 24px !important;
-
-  line-height: 1.2 !important;
-}
-
-.page-heading p {
-  color: var(--pt-silver) !important;
-
-  line-height: 1.45 !important;
-}
-
-.eyebrow {
-  color: var(--pt-gold-bright) !important;
-}
-
-/* =========================================================
-   PANEL / CARD
-   ========================================================= */
-
-.panel,
-.stat-card,
-.mini-kpi,
-.org-card,
-.calendar-card,
-.feature-card,
-.report-card,
-.setting-card {
-  background: var(--pt-navy-2) !important;
-
-  color: var(--pt-silver) !important;
-
-  border:
-    1px solid var(--pt-gold) !important;
-
-  box-shadow:
-    0 8px 25px rgba(0,0,0,.22) !important;
-}
-
-.panel-head {
-  border-bottom:
-    1px solid rgba(212,175,55,.35) !important;
-}
-
-.panel-head h2,
-.quick h2,
-.settings h2 {
-  color: var(--pt-silver-bright) !important;
-}
-
-.panel-head p {
-  color: var(--pt-silver) !important;
-}
-
-/* =========================================================
-   SEMUA TULISAN DI AREA ADMIN
-   ========================================================= */
-
-.talenta-main,
-.talenta-main p,
-.talenta-main span,
-.talenta-main small,
-.talenta-main label,
-.talenta-main td,
-.talenta-main th,
-.talenta-main li {
-  color: var(--pt-silver);
-}
-
-.talenta-main strong,
-.talenta-main b {
-  color: var(--pt-silver-bright);
-}
-
-/* =========================================================
-   TABEL
-   ========================================================= */
-
-.table-panel {
-  background: var(--pt-navy-2) !important;
-
-  border:
-    1px solid var(--pt-gold) !important;
-}
-
-.table-wrap {
-  width: 100% !important;
-
-  max-height: 55vh !important;
-
-  min-height: 250px !important;
-
-  overflow-y: scroll !important;
-
-  overflow-x: auto !important;
-
-  scrollbar-width: thin !important;
-
-  scrollbar-color:
-    var(--pt-silver)
-    var(--pt-navy) !important;
-}
-
-/* Chrome / Edge / Android Chromium */
-
-.table-wrap::-webkit-scrollbar {
-  width: 9px !important;
-  height: 9px !important;
-}
-
-.table-wrap::-webkit-scrollbar-track {
-  background: var(--pt-navy) !important;
-
-  border-left:
-    1px solid rgba(212,175,55,.25);
-}
-
-.table-wrap::-webkit-scrollbar-thumb {
-  background:
-    linear-gradient(
-      180deg,
-      #e0e0e0,
-      #a8a8a8
-    ) !important;
-
-  border-radius: 10px !important;
-
-  border:
-    1px solid #d4af37 !important;
-}
-
-.table-wrap::-webkit-scrollbar-thumb:hover {
-  background: #e8e8e8 !important;
-}
-
-/* Header tabel */
-
-table th {
-  background: var(--pt-navy-3) !important;
-
-  color: var(--pt-gold-bright) !important;
-
-  border-bottom:
-    1px solid var(--pt-gold) !important;
-}
-
-table td {
-  color: var(--pt-silver) !important;
-
-  border-bottom:
-    1px solid rgba(192,192,192,.18) !important;
-}
-
-table tr:hover td {
-  background:
-    rgba(212,175,55,.08) !important;
-
-  color: var(--pt-silver-bright) !important;
-}
-
-/* =========================================================
-   INPUT / SEARCH
-   ========================================================= */
-
-.search-global,
-.toolbar input,
-.toolbar select,
-.toolbar-panel input,
-.toolbar-panel select,
-.filter,
-.form-grid input,
-.form-grid select,
-.form-grid textarea,
-.login-card input {
-  background: var(--pt-navy-3) !important;
-
-  color: var(--pt-silver-bright) !important;
-
-  border:
-    1px solid var(--pt-gold) !important;
-}
-
-.search-global input {
-  color: var(--pt-silver-bright) !important;
-}
-
-.search-global input::placeholder,
-input::placeholder,
-textarea::placeholder {
-  color: var(--pt-silver-dark) !important;
-}
-
-/* =========================================================
-   BUTTON
-   ========================================================= */
-
-.talenta-main button.primary,
-.talenta-main button.primary-btn,
-.talenta-main button.btn-primary,
-.talenta-main button.secondary {
-  background: var(--pt-navy-3) !important;
-
-  color: var(--pt-silver-bright) !important;
-
-  border:
-    1px solid var(--pt-gold) !important;
-
-  box-shadow:
-    0 3px 12px rgba(0,0,0,.22) !important;
-}
-
-.talenta-main button.primary:hover,
-.talenta-main button.secondary:hover {
-  background: #173662 !important;
-
-  color: var(--pt-gold-bright) !important;
-
-  border-color:
-    var(--pt-gold-bright) !important;
-}
-
-/* =========================================================
-   PROFESSIONAL SUITE
-   ========================================================= */
-
-.professional-suite {
-  color: var(--pt-silver) !important;
-}
-
-.professional-suite .panel,
-.professional-suite .stat-card {
-  background: var(--pt-navy-2) !important;
-
-  border:
-    1px solid var(--pt-gold) !important;
-}
-
-.professional-suite .branch-tabs {
-  background: var(--pt-navy-2) !important;
-
-  border:
-    1px solid var(--pt-gold) !important;
-
-  padding: 5px !important;
-}
-
-.professional-suite .branch-tabs button {
-  background: transparent !important;
-
-  color: var(--pt-silver) !important;
-
-  border:
-    1px solid transparent !important;
-}
-
-.professional-suite .branch-tabs button:hover {
-  color: var(--pt-gold-bright) !important;
-
-  border-color: var(--pt-gold) !important;
-
-  background: var(--pt-navy-3) !important;
-}
-
-.professional-suite .branch-tabs button.active {
-  background: var(--pt-navy-3) !important;
-
-  color: var(--pt-gold-bright) !important;
-
-  border:
-    1px solid var(--pt-gold) !important;
-}
-
-/* =========================================================
-   LOADING DASHBOARD
-   ========================================================= */
-
-.pt-dashboard-loading {
-  position: fixed;
-
-  inset: 0;
-
-  z-index: 99999;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  flex-direction: column;
-
-  gap: 22px;
-
-  background:
-    radial-gradient(
-      circle at center,
-      #102b58 0%,
-      #071a3d 48%,
-      #030d20 100%
-    );
-
-  color: var(--pt-silver);
-
-  animation: ptFadeIn .25s ease-out;
-}
-
-.pt-loading-logo {
-  width: 78px;
-
-  height: 78px;
-
-  padding: 12px;
-
-  border:
-    1px solid var(--pt-gold);
-
-  border-radius: 20px;
-
-  box-shadow:
-    0 0 30px rgba(212,175,55,.20);
-
-  animation:
-    ptLogoPulse 1.6s ease-in-out infinite;
-}
-
-.pt-loading-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.pt-loading-ring {
-  width: 48px;
-
-  height: 48px;
-
-  border:
-    3px solid rgba(192,192,192,.20);
-
-  border-top-color:
-    var(--pt-gold);
-
-  border-right-color:
-    var(--pt-silver);
-
-  border-radius: 50%;
-
-  animation:
-    ptSpin .8s linear infinite;
-}
-
-.pt-loading-title {
-  color: var(--pt-silver-bright);
-
-  font-size: 15px;
-
-  font-weight: 700;
-
-  letter-spacing: .3px;
-}
-
-.pt-loading-subtitle {
-  color: var(--pt-silver-dark);
-
-  font-size: 11px;
-}
-
-.pt-loading-bar {
-  width: 220px;
-
-  height: 3px;
-
-  overflow: hidden;
-
-  border-radius: 10px;
-
-  background: rgba(192,192,192,.15);
-}
-
-.pt-loading-bar span {
-  display: block;
-
-  width: 45%;
-
-  height: 100%;
-
-  background:
-    linear-gradient(
-      90deg,
-      var(--pt-gold),
-      var(--pt-silver),
-      var(--pt-gold)
-    );
-
-  animation:
-    ptLoadingBar 1.2s ease-in-out infinite;
-}
-
-@keyframes ptSpin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes ptLogoPulse {
-  0%,100% {
-    transform: scale(1);
-    box-shadow:
-      0 0 20px rgba(212,175,55,.12);
-  }
-
-  50% {
-    transform: scale(1.05);
-    box-shadow:
-      0 0 35px rgba(212,175,55,.30);
-  }
-}
-
-@keyframes ptLoadingBar {
-  0% {
-    transform: translateX(-120%);
-  }
-
-  100% {
-    transform: translateX(480%);
-  }
-}
-
-@keyframes ptFadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-/* =========================================================
-   PROJECT BY TIRTA — FINAL DARK NAVY / SILVER / GOLD
-   Tempel PALING BAWAH admin.css
-   ========================================================= */
-
-:root {
   --mx-primary: #0b1736 !important;
   --mx-accent: #d4af37 !important;
   --mx-background: #071126 !important;
@@ -2347,11 +1290,8 @@ textarea::placeholder {
   --mx-text-secondary: #b8b8b8 !important;
   --mx-text-muted: #9299a8 !important;
   --mx-border: #d4af37 !important;
+  --mx-border-strong: #f0cf69 !important;
 }
-
-/* =========================================================
-   1. BACKGROUND UTAMA
-   ========================================================= */
 
 html,
 body,
@@ -2362,69 +1302,115 @@ body,
 
 .talenta-shell,
 .talenta-main,
-.page,
 .admin-main,
 .dashboard-main,
 .page-content,
-.content-area {
+.content-area,
+.page {
   background: #071126 !important;
   color: #c0c0c0 !important;
 }
 
-/* =========================================================
-   2. SIDEBAR
-   ========================================================= */
-
+/* Sidebar: DashboardAdmin memakai .sidebar, komponen lama memakai .talenta-sidebar */
+.sidebar,
 .talenta-sidebar {
   background: #080f20 !important;
   color: #c0c0c0 !important;
   border-right: 1px solid #d4af37 !important;
 }
 
-.talenta-sidebar .brand,
+.sidebar .brand b,
+.sidebar .brand small,
 .talenta-sidebar .brand b,
 .talenta-sidebar .brand small {
   color: #c0c0c0 !important;
 }
 
+.sidebar .brand small,
+.talenta-sidebar .brand small,
+.sidebar .group-title,
 .talenta-sidebar .group-title {
-  background: transparent !important;
   color: #9299a8 !important;
 }
 
-/* Menu */
+.sidebar .workspace,
+.talenta-sidebar .workspace {
+  background: #0d1830 !important;
+  color: #9299a8 !important;
+  border: 1px solid #27334a !important;
+}
+
+.sidebar .workspace b,
+.talenta-sidebar .workspace b {
+  color: #c0c0c0 !important;
+}
+
+.sidebar .nav-item,
 .talenta-sidebar .nav-item {
   background: transparent !important;
   color: #c0c0c0 !important;
   border: 1px solid transparent !important;
+  border-radius: 10px !important;
+  transition: background .18s ease, border-color .18s ease, box-shadow .18s ease, color .18s ease, transform .18s ease !important;
 }
 
-/* Menu hover */
+.sidebar .nav-item:hover,
 .talenta-sidebar .nav-item:hover {
   background: #111d38 !important;
   color: #ffffff !important;
-  border: 1px solid #d4af37 !important;
+  border-color: #d4af37 !important;
   box-shadow: 0 0 10px rgba(212,175,55,.20) !important;
+  transform: translateX(2px) !important;
 }
 
-/* Menu aktif */
+.sidebar .nav-item.active,
 .talenta-sidebar .nav-item.active {
   background: #172441 !important;
   color: #d4af37 !important;
-  border: 1px solid #d4af37 !important;
+  border-color: #d4af37 !important;
   box-shadow: 0 0 12px rgba(212,175,55,.18) !important;
+  transform: none !important;
 }
 
+.sidebar .nav-item span,
+.sidebar .nav-item svg,
 .talenta-sidebar .nav-item span,
 .talenta-sidebar .nav-item svg {
   color: inherit !important;
+  stroke: currentColor !important;
 }
 
-/* =========================================================
-   3. TOPBAR
-   ========================================================= */
+.sidebar .nav-item.active span,
+.sidebar .nav-item.active svg,
+.talenta-sidebar .nav-item.active span,
+.talenta-sidebar .nav-item.active svg {
+  color: #d4af37 !important;
+  stroke: currentColor !important;
+}
 
-.topbar {
+.sidebar .admin-mini,
+.talenta-sidebar .admin-mini {
+  border-top-color: #27334a !important;
+}
+
+.sidebar .admin-mini b,
+.talenta-sidebar .admin-mini b {
+  color: #c0c0c0 !important;
+}
+
+.sidebar .admin-mini small,
+.talenta-sidebar .admin-mini small {
+  color: #9299a8 !important;
+}
+
+.sidebar .logout,
+.talenta-sidebar .logout {
+  color: #d6a7a7 !important;
+}
+
+/* Topbar */
+.topbar,
+.talenta-main .topbar {
   background: #080f20 !important;
   color: #c0c0c0 !important;
   border-bottom: 1px solid #d4af37 !important;
@@ -2432,7 +1418,8 @@ body,
 
 .crumb,
 .crumb span,
-.crumb b {
+.crumb b,
+.icon-btn {
   color: #c0c0c0 !important;
 }
 
@@ -2446,14 +1433,13 @@ body,
   color: #c0c0c0 !important;
 }
 
-.search-global input::placeholder {
-  color: #7f8798 !important;
+.search-global input::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: #737c90 !important;
 }
 
-/* =========================================================
-   4. SEMUA KOTAK / CARD / PANEL JADI HITAM
-   ========================================================= */
-
+/* Cards / panels */
 .panel,
 .card,
 .dashboard-card,
@@ -2476,22 +1462,9 @@ body,
 .custom-theme-panel {
   background: #0b1222 !important;
   color: #c0c0c0 !important;
-  border: 1px solid #d4af37 !important;
+  border-color: #d4af37 !important;
   box-shadow: 0 5px 20px rgba(0,0,0,.30) !important;
 }
-
-/* Header di dalam panel */
-.panel-head,
-.panel-head h2,
-.panel-head p,
-.quick h2,
-.quick p {
-  color: #c0c0c0 !important;
-}
-
-/* =========================================================
-   5. JUDUL DAN TEKS
-   ========================================================= */
 
 .page-heading h1,
 .page-heading h2,
@@ -2499,42 +1472,28 @@ body,
 .panel h1,
 .panel h2,
 .panel h3,
+.panel-head h2,
 .stat-card strong,
 .mini-kpi b,
-.report-card b {
+.report-card b,
+.quick h2,
+.settings h2 {
   color: #c0c0c0 !important;
 }
 
 .page-heading p,
 .panel-head p,
+.panel p,
 .org-card p,
 .calendar-card p,
 .feature-card p,
 .report-card p,
 .setting-card p,
-.quick p {
-  color: #9299a8 !important;
-}
-
-/* =========================================================
-   6. CARD STATISTIK
-   ========================================================= */
-
-.stat-card,
-.mini-kpi {
-  background: #0b1222 !important;
-  border-color: #d4af37 !important;
-}
-
+.quick p,
 .stat-card span,
 .stat-card small,
 .mini-kpi span {
   color: #9299a8 !important;
-}
-
-.stat-card strong,
-.mini-kpi b {
-  color: #c0c0c0 !important;
 }
 
 .stat-icon {
@@ -2543,25 +1502,15 @@ body,
   border: 1px solid #d4af37 !important;
 }
 
-/* =========================================================
-   7. TABEL
-   ========================================================= */
-
-.table-panel {
-  background: #0b1222 !important;
-}
-
+/* Table: scrollbar sengaja dipertahankan */
 .table-wrap {
   max-height: calc(100vh - 270px) !important;
-
   overflow-y: scroll !important;
   overflow-x: auto !important;
-
   scrollbar-width: thin !important;
   scrollbar-color: #d4af37 #111a2d !important;
 }
 
-/* Chrome / Android / Edge */
 .table-wrap::-webkit-scrollbar {
   width: 10px !important;
   height: 10px !important;
@@ -2582,24 +1531,26 @@ body,
   background: #f0cf69 !important;
 }
 
-/* Tabel */
 table {
   color: #c0c0c0 !important;
 }
 
+table th,
 th {
   background: #101a30 !important;
   color: #d4af37 !important;
   border-bottom: 1px solid #d4af37 !important;
 }
 
+table td,
 td {
   background: #0b1222 !important;
   color: #c0c0c0 !important;
   border-bottom: 1px solid #27334a !important;
 }
 
-td b {
+td b,
+td small {
   color: #c0c0c0 !important;
 }
 
@@ -2609,75 +1560,25 @@ td small {
 
 tr:hover td {
   background: #14213d !important;
+  color: #ffffff !important;
 }
 
-/* =========================================================
-   8. QUICK ACTION / LIST
-   ========================================================= */
-
-.quick-action,
-.list-select,
-.assignment-row {
-  background: #0b1222 !important;
-  color: #c0c0c0 !important;
-  border-color: #27334a !important;
-}
-
-.quick-action:hover,
-.list-select:hover,
-.list-select.active {
-  background: #172441 !important;
-  color: #d4af37 !important;
-  border-color: #d4af37 !important;
-}
-
-/* =========================================================
-   9. TOMBOL
-   ========================================================= */
-
-.talenta-main .primary,
-.talenta-main button.primary {
-  background: #101a33 !important;
-  color: #d4af37 !important;
-  border: 1px solid #d4af37 !important;
-}
-
-.talenta-main .primary:hover,
-.talenta-main button.primary:hover {
-  background: #172441 !important;
-  color: #f0cf69 !important;
-  border-color: #f0cf69 !important;
-}
-
-.talenta-main .secondary,
-.talenta-main button.secondary {
-  background: #0b1222 !important;
-  color: #c0c0c0 !important;
-  border: 1px solid #d4af37 !important;
-}
-
-.talenta-main .secondary:hover,
-.talenta-main button.secondary:hover {
-  background: #172441 !important;
-  color: #d4af37 !important;
-}
-
-/* =========================================================
-   10. INPUT / SELECT
-   ========================================================= */
-
+/* Form */
 input,
 select,
 textarea,
-.filter {
+.filter,
+.toolbar input,
+.toolbar select,
+.toolbar-panel input,
+.toolbar-panel select,
+.compact-input,
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
   background: #0b1222 !important;
   color: #c0c0c0 !important;
   border: 1px solid #d4af37 !important;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #737c90 !important;
 }
 
 input:focus,
@@ -2687,34 +1588,73 @@ textarea:focus {
   box-shadow: 0 0 0 2px rgba(212,175,55,.15) !important;
 }
 
-/* =========================================================
-   11. BADGE
-   ========================================================= */
-
-.badge-soft {
-  background: #172441 !important;
+/* Buttons */
+.primary,
+.secondary,
+.talenta-main button.primary,
+.talenta-main button.primary-btn,
+.talenta-main button.btn-primary,
+.talenta-main button.secondary {
+  background: #101a33 !important;
   color: #d4af37 !important;
   border: 1px solid #d4af37 !important;
 }
 
-/* =========================================================
-   12. MOBILE
-   ========================================================= */
+.primary:hover,
+.secondary:hover,
+.talenta-main button.primary:hover,
+.talenta-main button.secondary:hover {
+  background: #172441 !important;
+  color: #f0cf69 !important;
+  border-color: #f0cf69 !important;
+}
 
-@media (max-width: 700px) {
+/* Professional Suite */
+.professional-suite,
+.professional-suite .panel,
+.professional-suite .stat-card,
+.professional-suite .branch-tabs,
+.professional-suite .action-card {
+  color: #c0c0c0 !important;
+}
 
-  .page {
-    background: #071126 !important;
-  }
+.professional-suite .panel,
+.professional-suite .stat-card,
+.professional-suite .branch-tabs,
+.professional-suite .action-card {
+  background: #0b1222 !important;
+  border-color: #d4af37 !important;
+}
 
+.professional-suite .branch-tabs button {
+  background: transparent !important;
+  color: #c0c0c0 !important;
+  border: 1px solid transparent !important;
+}
+
+.professional-suite .branch-tabs button:hover,
+.professional-suite .branch-tabs button.active {
+  background: #172441 !important;
+  color: #d4af37 !important;
+  border-color: #d4af37 !important;
+}
+
+.professional-suite .action-card:hover {
+  background: #14213d !important;
+  border-color: #f0cf69 !important;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
   .table-wrap {
     max-height: calc(100vh - 220px) !important;
     overflow-y: scroll !important;
     overflow-x: auto !important;
   }
 
+  .sidebar,
   .talenta-sidebar {
-    background: #080f20 !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
   }
-
 }
