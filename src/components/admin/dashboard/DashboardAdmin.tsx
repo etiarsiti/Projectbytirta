@@ -140,6 +140,7 @@ export default function DashboardAdmin() {
 
   // 1. Deklarasi State diletakkan paling atas di dalam komponen
   const [logged, setLogged] = useState(false);
+  const [dashboardEntering, setDashboardEntering] = useState(false);
   const [email, setEmail] = useState('');
   const [pin, setPin] = useState('');
   const [menu, setMenu] = useState<MenuKey>('overview');
@@ -148,7 +149,9 @@ export default function DashboardAdmin() {
   const [attendance, setAttendance] = useState<Absensi[]>([]);
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(false);
+  const [dashboardEntering, setDashboardEntering] = useState(false);
   const [error, setError] = useState('');
+  const [dashboardEntering, setDashboardEntering] = useState(false);
   const [toast, setToast] = useState('');
   const [editing, setEditing] = useState<Karyawan | null>(null);
   const [userRole, setUserRole] = useState('');
