@@ -1799,216 +1799,28 @@ button {
 
 /* FINAL TABLE SCROLLBAR */
 .table-wrap{width:100% !important;max-width:100% !important;max-height:60vh !important;overflow-x:auto !important;overflow-y:scroll !important;scrollbar-width:auto !important;scrollbar-color:#D4AF37 #111A2D !important}.table-wrap::-webkit-scrollbar{width:12px !important;height:12px !important}.table-wrap::-webkit-scrollbar-track{background:#111A2D !important}.table-wrap::-webkit-scrollbar-thumb{background:#D4AF37 !important;border-radius:8px !important;border:2px solid #111A2D !important}.table-wrap::-webkit-scrollbar-thumb:hover{background:#F0D56A !important}
-/* =========================================================
-   PROJECT BY TIRTA — FINAL PROFESSIONAL UI
-   SIDEBAR + SECTION BAR + TABLE SCROLLBAR
-   ========================================================= */
 
-/* =========================
-   WARNA UTAMA
-   ========================= */
-
-:root {
-  --pt-bg: #071126;
-  --pt-sidebar: #080F20;
-  --pt-surface: #0B1222;
-  --pt-card: #101A30;
-  --pt-card-hover: #16233D;
-  --pt-gold: #D4AF37;
-  --pt-gold-hover: #F0D56A;
-  --pt-text: #C0C0C0;
-  --pt-muted: #8F9AAF;
-}
-
-
-/* =========================
-   SIDEBAR KIRI
-   ========================= */
-
-.sidebar,
-.talenta-sidebar {
-  background: var(--pt-sidebar) !important;
-  color: var(--pt-text) !important;
-
-  height: 100vh !important;
-  max-height: 100vh !important;
-
-  overflow-y: scroll !important;
-  overflow-x: hidden !important;
-
-  scrollbar-width: auto !important;
-  scrollbar-color: var(--pt-gold) var(--pt-sidebar) !important;
-
-  -webkit-overflow-scrolling: touch !important;
-}
-
-
-/* =========================
-   SCROLLBAR SIDEBAR
-   ========================= */
-
-.sidebar::-webkit-scrollbar,
-.talenta-sidebar::-webkit-scrollbar {
-  width: 9px !important;
-}
-
-.sidebar::-webkit-scrollbar-track,
-.talenta-sidebar::-webkit-scrollbar-track {
-  background: var(--pt-sidebar) !important;
-}
-
-.sidebar::-webkit-scrollbar-thumb,
-.talenta-sidebar::-webkit-scrollbar-thumb {
-  background: var(--pt-gold) !important;
-  border-radius: 8px !important;
-  border: 2px solid var(--pt-sidebar) !important;
-  min-height: 45px !important;
-}
-
-.sidebar::-webkit-scrollbar-thumb:hover,
-.talenta-sidebar::-webkit-scrollbar-thumb:hover {
-  background: var(--pt-gold-hover) !important;
-}
-
-
-/* =========================
-   BAR UTAMA / PEOPLE /
-   ATTENDANCE
-   ========================= */
-
-.sidebar .menu-section,
-.talenta-sidebar .menu-section,
-.sidebar .section-title,
-.talenta-sidebar .section-title,
-.sidebar .menu-group-title,
-.talenta-sidebar .menu-group-title {
-  background: var(--pt-surface) !important;
-  color: var(--pt-text) !important;
-
-  border: 1px solid rgba(212, 175, 55, 0.40) !important;
-  border-left: 3px solid var(--pt-gold) !important;
-
-  border-radius: 6px !important;
-
-  box-shadow: none !important;
-
-  font-size: 11px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.8px !important;
-
-  min-height: 38px !important;
-}
-
-
-/* HOVER BAR */
-
-.sidebar .menu-section:hover,
-.talenta-sidebar .menu-section:hover,
-.sidebar .section-title:hover,
-.talenta-sidebar .section-title:hover,
-.sidebar .menu-group-title:hover,
-.talenta-sidebar .menu-group-title:hover {
-  background: var(--pt-card-hover) !important;
-  color: var(--pt-gold-hover) !important;
-
-  border-color: rgba(212, 175, 55, 0.75) !important;
-}
-
-
-/* ICON / PANAH BAR */
-
-.sidebar .menu-section svg,
-.talenta-sidebar .menu-section svg,
-.sidebar .section-title svg,
-.talenta-sidebar .section-title svg,
-.sidebar .menu-group-title svg,
-.talenta-sidebar .menu-group-title svg {
-  color: var(--pt-gold) !important;
-}
-
-
-/* =========================
-   MENU SIDEBAR
-   ========================= */
-
-.sidebar button,
-.talenta-sidebar button,
-.sidebar a,
-.talenta-sidebar a {
-  color: var(--pt-text) !important;
-  font-size: 12px !important;
-}
-
-
-/* MENU HOVER */
-
-.sidebar button:hover,
-.talenta-sidebar button:hover,
-.sidebar a:hover,
-.talenta-sidebar a:hover {
-  color: var(--pt-gold-hover) !important;
-  background: rgba(212, 175, 55, 0.08) !important;
-}
-
-
-/* =========================
-   MENU AKTIF
-   ========================= */
-
-.sidebar .active,
-.talenta-sidebar .active {
-  color: var(--pt-gold-hover) !important;
-  background: rgba(212, 175, 55, 0.12) !important;
-
-  border: 1px solid rgba(212, 175, 55, 0.70) !important;
-  border-radius: 6px !important;
-}
-
-
-/* =========================
-   TABLE WRAPPER
-   ========================= */
-
+/* ===== FINAL MOBILE TABLE SCROLL ===== */
 .table-wrap {
   display: block !important;
-
   width: 100% !important;
-
-  /*
-   * Tinggi area tabel tetap.
-   * Scrollbar vertikal tetap tersedia.
-   */
   height: 60vh !important;
   max-height: 60vh !important;
   min-height: 300px !important;
-
   overflow-y: scroll !important;
   overflow-x: auto !important;
-
   -webkit-overflow-scrolling: touch !important;
-
   scrollbar-width: auto !important;
-  scrollbar-color: var(--pt-gold) #111A2D !important;
+  scrollbar-color: #D4AF37 #111A2D !important;
 }
-
-
-/* =========================
-   TABLE LEBIH LEBAR DARI LAYAR
-   ========================= */
 
 .table-wrap > table {
   min-width: 900px !important;
 }
 
-
-/* =========================
-   SCROLLBAR TABEL
-   ========================= */
-
 .table-wrap::-webkit-scrollbar {
   width: 14px !important;
   height: 14px !important;
-
   display: block !important;
 }
 
@@ -2017,108 +1829,13 @@ button {
 }
 
 .table-wrap::-webkit-scrollbar-thumb {
-  background: var(--pt-gold) !important;
-
+  background: #D4AF37 !important;
   border-radius: 8px !important;
-
   border: 2px solid #111A2D !important;
-
   min-height: 40px !important;
 }
 
 .table-wrap::-webkit-scrollbar-thumb:hover {
-  background: var(--pt-gold-hover) !important;
+  background: #F0D56A !important;
 }
 
-
-/* =========================
-   TABEL
-   ========================= */
-
-.table-wrap table {
-  font-size: 12px !important;
-}
-
-.table-wrap th {
-  font-size: 11px !important;
-  color: var(--pt-text) !important;
-}
-
-.table-wrap td {
-  font-size: 12px !important;
-  color: var(--pt-text) !important;
-}
-
-
-/* =========================
-   CARD
-   ========================= */
-
-.card,
-.dashboard-card,
-.stat-card,
-.kpi-card,
-.summary-card,
-.metric-card,
-.info-card {
-  background: var(--pt-card) !important;
-  color: var(--pt-text) !important;
-
-  border: 1px solid rgba(212, 175, 55, 0.55) !important;
-
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28) !important;
-}
-
-.card:hover,
-.dashboard-card:hover,
-.stat-card:hover,
-.kpi-card:hover,
-.summary-card:hover,
-.metric-card:hover,
-.info-card:hover {
-  background: var(--pt-card-hover) !important;
-  border-color: var(--pt-gold) !important;
-}
-
-
-/* =========================
-   FONT UMUM
-   ========================= */
-
-body,
-button,
-input,
-select,
-textarea,
-table {
-  font-size: 13px !important;
-}
-
-body {
-  color: var(--pt-text) !important;
-}
-
-
-/* =========================
-   INPUT
-   ========================= */
-
-input,
-select,
-textarea {
-  background: #0D172A !important;
-  color: var(--pt-text) !important;
-
-  border-color: rgba(212, 175, 55, 0.45) !important;
-
-  font-size: 12px !important;
-}
-
-
-/* =========================
-   TOMBOL
-   ========================= */
-
-button {
-  font-size: 12px !important;
-}
