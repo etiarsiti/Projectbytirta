@@ -149,9 +149,7 @@ export default function DashboardAdmin() {
   const [attendance, setAttendance] = useState<Absensi[]>([]);
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(false);
-  const [dashboardEntering, setDashboardEntering] = useState(false);
   const [error, setError] = useState('');
-  const [dashboardEntering, setDashboardEntering] = useState(false);
   const [toast, setToast] = useState('');
   const [editing, setEditing] = useState<Karyawan | null>(null);
   const [userRole, setUserRole] = useState('');
